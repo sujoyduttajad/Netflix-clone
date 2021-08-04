@@ -37,7 +37,7 @@ export const Header = styled.div`
     padding: 0.8em 1.2em;
     user-select: none;
     align-items: center;
-    border-radius: 5px;
+    border-radius: 1px;
 
     img{
         filter: brightness(0) invert(1);

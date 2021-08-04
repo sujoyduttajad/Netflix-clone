@@ -38,7 +38,7 @@ export const Button = styled.button`
         background: #f40612;
     }
 
-    @media (max-width: 600px) {
+    @media (max-width: 744px) {
         height: 50px;
         font-size: 16px;
         margin-top: 20px;
@@ -61,7 +61,7 @@ export const Text = styled.p`
     color: white;
     text-align: center;
 
-    @media (max-width: 600px) {
+    @media (max-width: 750px) {
         font-size: 16px;
         line-height: 22px;
     }
