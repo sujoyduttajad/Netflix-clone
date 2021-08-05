@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch } from 'react-router';
+import { BrowserRouter as Router, Switch } from 'react-router-dom';
 import { FaqsContainer } from './containers/faqs';
 import { FooterContainer } from './containers/footer';
 import { JumbotronContainer } from './containers/jumbotron';
