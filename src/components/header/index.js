@@ -1,11 +1,9 @@
 import React from 'react'
 
-function Header() {
+export default function Header({ bg = true, children, ...restProps }) {
     return (
-        <div>
-            
-        </div>
+        bg ? <Background {...restProps}>{children}</Background> : children
     )
 }
 
-export default Header
+

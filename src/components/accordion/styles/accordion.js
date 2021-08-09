@@ -34,7 +34,7 @@ export const Header = styled.div`
     font-size: 20px;
     font-weight: normal;
     background: #303030;
-    padding: 0.8em 1.2em;
+    padding: 0.7em 1.2em;
     user-select: none;
     align-items: center;
     border-radius: 1px;

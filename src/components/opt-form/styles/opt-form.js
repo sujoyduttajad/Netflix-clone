@@ -18,6 +18,7 @@ export const Input = styled.input`
     width: 100%;
     border: 0;
     padding: 10px;
+    padding-left: 2em;
     height: 70px;
     box-sizing: border-box;
 `;
