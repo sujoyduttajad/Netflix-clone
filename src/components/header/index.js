@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link as ReactRouterLink } from 'react-router-dom';
+import { Background, Container, Logo } from './styles/header';
 
 export default function Header({ bg = true, children, ...restProps }) {
     return (
