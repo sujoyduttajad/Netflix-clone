@@ -1,11 +1,15 @@
 import styled from 'styled-components/macro';
 import { Link as ReactRouterLink } from 'react-router-dom';
 
+// description of background URL logic - 
+// inside the url() we de-structured the src based on a condition - 
+// So if there is a src or background image available then 
+// --> go to the misc folder and use that image OR
+// --> if there is no background image provided then use the basic one which is home-bg.jpg in misc folder
 export const Background = styled.div`
     display: flex;
     flex-direction: column;
-    background: url(${({ src }) => 
-        src ? `../images/misc/${src}.jpg` : '../images/misc/home-bg.jpg'}) top left / cover no-repeat;
+    background: url(${({ src }) => (src ? `../images/misc/${src}.jpg` : '../images/misc/home-bg.jpg')}) top left / cover no-repeat;
 `;
 
 export const Frame = styled.div``;
