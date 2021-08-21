@@ -21,6 +21,7 @@ export const Input = styled.input`
     padding-left: 2em;
     height: 70px;
     box-sizing: border-box;
+    outline: none;
 `;
 
 export const Button = styled.button`
