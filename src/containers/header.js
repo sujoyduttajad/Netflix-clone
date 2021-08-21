@@ -1,5 +1,5 @@
 import React from 'react'
-import { Header } from '../components/accordion/styles/accordion'
+import { Header } from '../components/header/styles/header'
 
 function HeaderContainer() {
     return (
