@@ -1,13 +1,15 @@
 import React from 'react'
-import { Header } from '../components/header/styles/header'
+import { Header } from '../components'
+import * as ROUTES from '../constants/routes'
 
-function HeaderContainer() {
+export function HeaderContainer({ children }) {
     return (
         <Header>
             <Header.Frame>
-                <Header.Logo />
+                <Header.Logo to={ROUTES.HOME} alt="Netflix" />
                 <Header.Button />
             </Header.Frame>
+            {children}
         </Header>
     )
 }
