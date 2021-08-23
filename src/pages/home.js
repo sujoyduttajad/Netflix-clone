@@ -9,6 +9,9 @@ export default function Home() {
     return (
         <>
             <HeaderContainer>
+                <Feature>
+                    <Feature.Title>Unlimited films, TV programmes and more.</Feature.Title>
+                </Feature>
                 <OptForm>
                     <OptForm.Input placeholder="Email address" />
                     <OptForm.Button>GET STARTED</OptForm.Button>
