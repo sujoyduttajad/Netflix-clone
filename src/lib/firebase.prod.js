@@ -17,8 +17,15 @@ const config = {
      
 };
 
+// Firebase that we installed will initialize the application with the config we supplied
 const firebase = Firebase.initializeApp(config);
 
-seedDatabase(firebase);
+
+
+// Comment seedDatabase to prevent risking duplicate data 
+/*
+    seedDatabase(firebase);
+*/
+
 
 export { firebase };
