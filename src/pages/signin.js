@@ -8,10 +8,16 @@ const Signin = () => {
     const [password, setPassword] = useState();
     const [error, setError] = useState('');
 
+    // check form input elements are valid
+    // email & password
 
     return (
         <>
-            <HeaderContainer>HELLO from sign in</HeaderContainer>
+            <HeaderContainer>
+                <Form>
+                    <Form.Title>Sign In</Form.Title>
+                </Form>
+            </HeaderContainer>
             <FooterContainer />
         </>
     )
