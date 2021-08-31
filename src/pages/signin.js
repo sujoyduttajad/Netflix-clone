@@ -11,11 +11,25 @@ const Signin = () => {
     // check form input elements are valid
     // email & password
 
+    const handleSignin = () => {
+
+    }
+
     return (
         <>
             <HeaderContainer>
                 <Form>
                     <Form.Title>Sign In</Form.Title>
+                    {error && <Form.Error>{error}</Form.Error>}
+
+                    <Form.Base onSubmit={handleSignin} method="POST">
+                        <Form.Input
+                            placeholder="Email Address"
+                            value={emailAddress}
+                            onChange={({ target }) => setEmailAddress()}>
+
+                        </Form.Input>
+                    </Form.Base>
                 </Form>
             </HeaderContainer>
             <FooterContainer />
