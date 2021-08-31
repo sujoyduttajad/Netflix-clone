@@ -35,6 +35,9 @@ const Signin = () => {
                             value={password}
                             onChange={({ target }) => setPassword(target.value)}
                         />
+                        <Form.Submit disabled={isInvalid} type="submit">
+                            Sign In
+                        </Form.Submit>
                     </Form.Base>
                 </Form>
             </HeaderContainer>
