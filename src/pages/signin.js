@@ -8,8 +8,7 @@ const Signin = () => {
     const [password, setPassword] = useState();
     const [error, setError] = useState('');
 
-    // check form input elements are valid
-    // email & password
+    const isInvalid = password === '' || emailAddress === '';
 
     const handleSignin = () => {
 
