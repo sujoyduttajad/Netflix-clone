@@ -14,7 +14,14 @@ export const Container = styled.div`
     margin-bottom: 100px;
 `;
 
-export const Error = styled.div``;
+export const Error = styled.div`
+    background: #e87c03;
+    border-radius: 4px;
+    font-size: 14px;
+    margin: 0 0 16px;
+    color: white;
+    padding: 15px 20px;
+`;
 
 export const Base = styled.form``;
 
