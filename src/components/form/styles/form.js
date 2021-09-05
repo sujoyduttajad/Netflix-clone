@@ -23,7 +23,12 @@ export const Error = styled.div`
     padding: 15px 20px;
 `;
 
-export const Base = styled.form``;
+export const Base = styled.form`
+    display: flex;
+    flex-direction: column;
+    max-width: 450px;
+    width: 100%;
+`;
 
 export const Title = styled.h1``;
 
