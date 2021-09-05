@@ -10,8 +10,10 @@ const Signin = () => {
 
     const isInvalid = password === '' || emailAddress === '';
 
-    const handleSignin = () => {
+    const handleSignin = (event) => {
+        event.preventDefault();
 
+        // firebase work here
     }
 
     return (
