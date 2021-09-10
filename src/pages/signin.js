@@ -10,7 +10,7 @@ const Signin = () => {
 
     const isInvalid = password === '' || emailAddress === '';
 
-    const handleSignin = (event) => {
+    const handleSignIn = (event) => {
         event.preventDefault();
 
         // firebase work here
@@ -23,7 +23,7 @@ const Signin = () => {
                     <Form.Title>Sign In</Form.Title>
                     {error && <Form.Error>{error}</Form.Error>}
 
-                    <Form.Base onSubmit={handleSignin} method="POST">
+                    <Form.Base onSubmit={handleSignIn} method="POST">
                         <Form.Input
                             placeholder="Email Address"
                             value={emailAddress}
