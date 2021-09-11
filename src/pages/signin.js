@@ -4,10 +4,11 @@ import { HeaderContainer } from '../containers/header';
 import { Form } from '../components';
 import { FirebaseContext } from '../context/firebase';
 import * as ROUTES from '../constants/routes'; 
-// useHistory allows users to push into different pages
+// useHistory allows users to push into different pageson an action
 import { useHistory } from 'react-router';
 
 const Signin = () => {
+    const history = useHistory();
     const { firebase } = useContext(FirebaseContext);
     const [emailAddress, setEmailAddress] = useState('');
     const [password, setPassword] = useState('');
@@ -24,6 +25,7 @@ const Signin = () => {
             .signInWithEmailAndPassword(emailAddress, password)
             .then(() => {
                 // push to the browse page
+                history.push(ROUTES.BROWSE);
             })
             .catch((error) => {
                 setEmailAddress('');
