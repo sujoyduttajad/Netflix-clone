@@ -2,7 +2,10 @@ import React, {useState, useContext} from 'react'
 import { FooterContainer } from '../containers/footer';
 import { HeaderContainer } from '../containers/header';
 import { Form } from '../components';
-import { FirebaseContext } from '../context/firebase' 
+import { FirebaseContext } from '../context/firebase';
+import * as ROUTES from '../constants/routes'; 
+// useHistory allows users to push into different pages
+import { useHistory } from 'react-router';
 
 const Signin = () => {
     const { firebase } = useContext(FirebaseContext);
