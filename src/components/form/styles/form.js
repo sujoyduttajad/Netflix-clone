@@ -9,6 +9,7 @@ export const Container = styled.div`
     border-radius: 5px;
     box-sizing: border-box;
     width: 100%;
+    margin: 0 auto;
     max-width: 450px;
     padding: 60px 68px 40px;
     margin-bottom: 100px;
