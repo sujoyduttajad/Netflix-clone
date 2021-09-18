@@ -20,7 +20,7 @@ export const Error = styled.div`
     border-radius: 4px;
     font-size: 14px;
     margin: 0 0 16px;
-    color: white;
+    color: #fff;
     padding: 15px 20px;
 `;
 
