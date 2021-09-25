@@ -19,7 +19,7 @@ const Signin = () => {
     const handleSignIn = (event) => {
         event.preventDefault();
 
-        // firebase work here
+        // firebase auth(this is a Promise)
         firebase
             .auth()
             .signInWithEmailAndPassword(emailAddress, password)
