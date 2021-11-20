@@ -13,6 +13,9 @@ function Signup() {
     const { firebase } = useContext(FirebaseContext);
 
     const [firstName, setFirstName] = useState('');
+    const [emailAddress, setEmailAddress] = useState('');
+    const [password, setPassword] = useState('');
+    const [error, setError] = useState('');
 
     return (
         <div>
