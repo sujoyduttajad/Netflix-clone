@@ -17,6 +17,26 @@ function Signup() {
     const [password, setPassword] = useState('');
     const [error, setError] = useState('');
 
+    const isInvalid = firstName === '' ||  password === '' || emailAddress === '';
+
+    const handleSignUp = (event) => {
+        event.preventDefault();
+
+        // firebase auth(this is a Promise)
+        firebase
+            .auth()
+            .signInWithEmailAndPassword(emailAddress, password)
+            .then(() => {
+                // push to the browse page
+                history.push(ROUTES.BROWSE);
+            })
+            .catch((error) => {
+                setEmailAddress('');
+                setPassword('');
+                setError(error.message);
+            }); 
+    };
+
     return (
         <div>
             <h1>Hello from the signup</h1>
