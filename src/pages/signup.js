@@ -25,11 +25,13 @@ function Signup() {
         // firebase auth(this is a Promise)
         firebase
             .auth()
-            .signInWithEmailAndPassword(emailAddress, password)
-            .then(() => {
-                // push to the browse page
-                history.push(ROUTES.BROWSE);
-            })
+            .createUserWithEmailAndPassword(emailAddress, password)
+            .then((result) => 
+                result.user.updateProfile({ 
+                    displayName: firstName,
+                    photoURL: Math.floor(Math.random() * 5) + 1,
+                 })
+            )
             .catch((error) => {
                 setEmailAddress('');
                 setPassword('');
