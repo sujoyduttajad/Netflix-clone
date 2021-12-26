@@ -4,7 +4,7 @@ import { HeaderContainer } from '../containers/header';
 import { Form } from '../components';
 import { FirebaseContext } from '../context/firebase';
 import * as ROUTES from '../constants/routes'; 
-// useHistory allows users to push into different pageson an action
+// useHistory allows users to push into different pages on an action
 import { useHistory } from 'react-router';
 
 
@@ -38,9 +38,12 @@ function Signup() {
     };
 
     return (
-        <div>
-            <h1>Hello from the signup</h1>
-        </div>
+        <HeaderContainer>
+            <Form>
+                <Form.Title>Sign Up</Form.Title>
+                {error && <Form.Error>{error}</Form.Error>}
+            </Form>
+        </HeaderContainer>
     )
 }
 
