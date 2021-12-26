@@ -61,7 +61,9 @@ function Signup() {
                         placeholder="Password"
                         onChange={({ target }) => setPassword(target.value)}  
                     />
-                    
+                    <Form.Submit disabled={isInvalid} type="submit">
+                        Sign Up
+                    </Form.Submit>
                 </Form.Base>
             </Form>
         </HeaderContainer>
