@@ -38,6 +38,7 @@ function Signup() {
     };
 
     return (
+        <>
         <HeaderContainer>
             <Form>
                 <Form.Title>Sign Up</Form.Title>
@@ -73,10 +74,12 @@ function Signup() {
                         This page is protected by Google reCAPTCHA to ensure you're not a bot.
                         Learn more.
                     </Form.TextSmall>
-                    
+
                 </Form.Base>
             </Form>
         </HeaderContainer>
+        <FooterContainer />
+        </>
     )
 }
 
