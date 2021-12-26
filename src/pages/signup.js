@@ -45,10 +45,23 @@ function Signup() {
 
                 <Form.Base onSubmit={handleSignUp} method="POST">
                     <Form.Input
-                        placeholder="First Name"
+                        placeholder="First name"
                         value={firstName}
                         onChange={({ target }) => setFirstName(target.value)}  
                     />
+                    <Form.Input
+                        placeholder="Email address"
+                        value={emailAddress}
+                        onChange={({ target }) => setEmailAddress(target.value)}  
+                    />
+                    <Form.Input
+                        type="password"
+                        value={password}
+                        autoComplete="off"
+                        placeholder="Password"
+                        onChange={({ target }) => setPassword(target.value)}  
+                    />
+                    
                 </Form.Base>
             </Form>
         </HeaderContainer>
