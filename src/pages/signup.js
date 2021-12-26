@@ -64,6 +64,12 @@ function Signup() {
                     <Form.Submit disabled={isInvalid} type="submit">
                         Sign Up
                     </Form.Submit>
+
+                    <Form.Text>
+                        Already a user? 
+                        <Form.Link to="/signin">Sign in now.</Form.Link>
+                    </Form.Text>
+                    
                 </Form.Base>
             </Form>
         </HeaderContainer>
