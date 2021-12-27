@@ -35,6 +35,7 @@ function Signup() {
                  })
             )
             .catch((error) => {
+                setFirstName('');
                 setEmailAddress('');
                 setPassword('');
                 setError(error.message);
@@ -55,6 +56,7 @@ function Signup() {
                         onChange={({ target }) => setFirstName(target.value)}  
                     />
                     <Form.Input
+                        type="email"
                         placeholder="Email address"
                         value={emailAddress}
                         onChange={({ target }) => setEmailAddress(target.value)}  
