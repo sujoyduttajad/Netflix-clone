@@ -23,7 +23,6 @@ export default function App() {
       <Route exact path='/browse' >
         <Browse />
       </Route>
-      
       <Route exact path={ROUTES.HOME} >
         <Home />
       </Route>
