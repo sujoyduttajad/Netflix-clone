@@ -64,7 +64,8 @@ const Signin = () => {
                     </Form.Text>
                     <Form.TextSmall>
                         This page is protected by Google reCAPTCHA to ensure
-                        you're not a bot. Learn more.
+                        you're not a bot.
+                        <Form.Link to="#" > Learn more.</Form.Link>
                     </Form.TextSmall>
                 </Form>
             </HeaderContainer>
