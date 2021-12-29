@@ -17,8 +17,7 @@ export const Inner = styled.div`
 export const Item = styled.div`
     color: white;
     margin-bottom: 10px;
-    margin: auto;
-    max-width: 730px;
+    margin: 0 0 8px 0;
     width: 100%;
     
     &:first-of-type {
@@ -31,17 +30,18 @@ export const Header = styled.div`
     justify-content: space-between;
     cursor: pointer;
     margin-bottom: 1px;
-    font-size: 20px;
+    font-size: 25px;
     font-weight: normal;
     background: #303030;
-    padding: 0.7em 1.2em;
+    padding: 0.8em 2.2em 0.8em 1.2em;
     user-select: none;
     align-items: center;
     border-radius: 1px;
 
     img{
         filter: brightness(0) invert(1);
-        width: 24px;
+        width: 25px;
+        font-size: 2px;
 
         @media (max-width: 600px) {
             width: 16px;
