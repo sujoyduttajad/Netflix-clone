@@ -30,7 +30,6 @@ export const Button = styled.button`
     height: 2.7em;
     background: #e50914;
     color: white;
-    text-transform: uppercase;
     padding: 0 32px;
     font-size: 26px;
     border: 0;
