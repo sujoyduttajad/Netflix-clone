@@ -33,9 +33,9 @@ export default function App() {
         <Browse />
       </ProtectedRoute>
       <IsUserRedirect 
-        exact 
         loggedInPath={ROUTES.BROWSE}
         path={ROUTES.HOME} 
+        exact 
       >
         <Home />
       </IsUserRedirect>
