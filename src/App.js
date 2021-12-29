@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import * as ROUTES from './constants/routes'
 import { Home, Browse, Signin, Signup } from './pages';
-import { IsUserRedirect } from './helpers/routes' 
+import { IsUserRedirect, ProtectedRoute } from './helpers/routes' 
 
 export default function App() {
   const user = {};
@@ -24,15 +24,21 @@ export default function App() {
         exact
       >
         <Signup />
-      </IsUserRedirect>
-
-      <Route exact path='/browse' >
+      </IsUserRedirect>     
+      <ProtectedRoute
+        user={user}
+        path={ROUTES.BROWSE}
+        exact
+      >
         <Browse />
-      </Route>
-      <Route exact path={ROUTES.HOME} >
+      </ProtectedRoute>
+      <IsUserRedirect 
+        exact 
+        loggedInPath={ROUTES.BROWSE}
+        path={ROUTES.HOME} 
+      >
         <Home />
-      </Route>
-      
+      </IsUserRedirect>
     </Router> 
   )
 }
