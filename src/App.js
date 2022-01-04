@@ -5,8 +5,8 @@ import { Home, Browse, Signin, Signup } from './pages';
 import { IsUserRedirect, ProtectedRoute } from './helpers/routes' 
 
 export default function App() {
-  // const user = null;
-  const user = { name: 'Sujoy' };
+  const user = null;
+  // const user = { name: 'Sujoy' };
 
   return ( 
     <Router>
