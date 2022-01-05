@@ -8,10 +8,17 @@ import { Link as ReactRouterLink } from 'react-router-dom';
 // --> if there is no background image provided then use the basic one which is home-bg.jpg in misc folder
 export const Background = styled.div`
     display: flex;
-    flex-direction: column;
-    background: url(${({ src }) => (src ? `../images/misc/${src}.jpg` : '../images/misc/home-bg.jpg')}) top left / cover no-repeat;
+    flex-direction: column;  
 `;
 
+export const Image = styled.div`
+    background: url(${({ src }) => (src ? `../images/misc/${src}.jpg` : '../images/misc/home-bg.jpg')}) top left / cover no-repeat;
+    z-index: 0;
+    opacity: 0.6;
+    position: absolute;
+    top: 0rem;
+    left: 0rem;
+`;
 export const Frame = styled.div``;
 
 export const Container = styled.div`
@@ -21,6 +28,8 @@ export const Container = styled.div`
     margin: 0 56px;
     height: 64px;
     padding: 18px 0;
+    opacity: 1;
+    z-index: 10;
 
     a {
         display: flex;
