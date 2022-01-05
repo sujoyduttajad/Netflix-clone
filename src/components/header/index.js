@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link as ReactRouterLink } from 'react-router-dom';
-import { Background, ButtonLink, Container, Logo } from './styles/header';
+import { Background, ButtonLink, Container, Image, Logo } from './styles/header';
 
 export default function Header({ bg = true, children, ...restProps }) {
     return (
@@ -9,11 +9,16 @@ export default function Header({ bg = true, children, ...restProps }) {
 }
 
 Header.Frame = function HeaderFrame({ children, ...restProps }) {
-    return <Container {...restProps}>{children}</Container>;
+    return <Container  {...restProps}>{children}</Container>;
 }
 
 Header.ButtonLink = function HeaderButtonLink({ children, ...restProps }) {
     return <ButtonLink {...restProps}>{children}</ButtonLink>;
+
+}
+
+Header.Image = function HeaderImage({ children, ...restProps }) {
+    return <Image {...restProps}>{children}</Image>;
 }
 
 Header.Logo = function HeaderLogo({ to, ...restProps }) {
