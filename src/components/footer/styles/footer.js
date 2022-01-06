@@ -33,6 +33,11 @@ export const Link = styled.a`
     margin-bottom: 20px;
     font-size: 14px;
     text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+        transition: 0.5s all ease-in;
+    }
 `;
 
 export const Title = styled.p`
