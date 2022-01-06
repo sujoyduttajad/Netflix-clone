@@ -32,6 +32,7 @@ export const Button = styled.button`
     color: white;
     padding: 0 32px;
     font-size: 26px;
+    font-weight: 500;
     border: 0;
     cursor: pointer;
 
@@ -43,7 +44,7 @@ export const Button = styled.button`
         height: 50px;
         font-size: 16px;
         margin-top: 20px;
-        font-weight: bold;
+        /* font-weight: bold; */
     }
 
     img {
