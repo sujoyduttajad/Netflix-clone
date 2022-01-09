@@ -50,7 +50,8 @@ export const Button = styled.button`
     img {
         margin-left: 10px;
         filter: brightness(0) invert(1);
-        width: 24px;
+        width: 25px;
+        font-size: 1.9em;
 
         @media (max-width: 1000px) {
             width: 16px;
