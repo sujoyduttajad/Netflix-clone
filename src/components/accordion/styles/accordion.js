@@ -40,7 +40,8 @@ export const Header = styled.div`
 
     img{
         filter: brightness(0) invert(1);
-        width: 25px;
+        width: 20em;
+        height: 20em;
         font-size: 2px;
 
         @media (max-width: 600px) {
