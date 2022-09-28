@@ -5,7 +5,7 @@ const Browse = () => {
 
     // we need the series and the films 
     const { series } = useContent('series');
-    console.log(series);
+    const { films } = useContent('films');
     // we need slides
     // pass it to he browse container
     
