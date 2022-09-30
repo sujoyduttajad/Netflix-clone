@@ -11,9 +11,9 @@ export default function useContent(target) {
             .firestore()
             .collection(target)
             .get()
-            .then((snapshot) => {
-                console.log(snapshot)
-                const allContent = snapshot.docChanges.map((contentObj) => ({
+            .then((_snapshot ) => {
+                console.log(_snapshot)
+                const allContent = _snapshot.map((contentObj) => ({
                     ...contentObj.data(),
                     docId: contentObj.id,
                 }));
